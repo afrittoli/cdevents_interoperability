@@ -1,18 +1,8 @@
 # How to use this template
 
-Run the init.sh script:
+# Adopting CDEvents and Embracing Interoperability
 
-```bash
-./init.sh "Presentation Title" filename
-```
-
-and remove this paragraph.
-Note that "filename" may not include underscore signs.
-
-# __TITLE__
-
-Talk slides are available in [pdf](__FILE__.pdf).
-A [script](demo_script.md) is available for the demo parts.
+Talk slides are available in [pdf](cdevents_interoperability.pdf).
 
 ## Rebuilding the slides
 
@@ -24,7 +14,7 @@ Install the IBMPlex font from https://github.com/IBM/plex.
 To build the example just run:
 
 ```shell
-% xelatex __FILE__.tex
+% xelatex cdevents_interoperability.tex
 ```
 
-the output will be [__FILE__.pdf](__FILE__.pdf).
+the output will be [cdevents_interoperability.pdf](cdevents_interoperability.pdf).

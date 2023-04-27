@@ -18,14 +18,11 @@
 }
 
 \@namedef{ps@navigation@titlepage}{%
-  \setbeamertemplate{footline}{%
-    \parbox{0.9\linewidth}{\vspace*{-20pt}\hspace*{10pt}\insertdate}%
-    \parbox{0.1\linewidth}{\vspace*{-20pt}\hspace*{70pt}}%
-  }
+  \setbeamertemplate{footline}{}
   \setbeamertemplate{background}{
-    \includegraphics[width=\paperwidth,height=\paperheight]{img/title.png}
+    \includegraphics[width=\paperwidth,height=\paperheight]{img/cdeventscon-gradient-16-9.jpg}
   }
-  \setbeamercolor*{footline}{fg=black}
+  \setbeamercolor*{footline}{fg=white}
   \@nameuse{ps@navigation}}
 \addtobeamertemplate{title page}{\thispagestyle{navigation@titlepage}}{}
 
