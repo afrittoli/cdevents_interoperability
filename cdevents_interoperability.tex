@@ -11,13 +11,13 @@
 \usepackage{svg}
 
 
-\title{CDEvents Project Updates \& Roadmap}
-\date[6 Dec 2022]{CDF TOC Meeting | 6 Dec 2022 | \faTwitter ~@\_cdevents | \faGithub ~cdevents}
+\title{Adopting CDEvents and Embracing Interoperability}
+\date[9 May 2023]{cdCon + GitOpsCon | 9 May 2023 | \faTwitter ~@\_cdevents | \faGithub ~cdevents}
 \author[Andrea Frittoli]{%
   Andrea Frittoli \\
   Developer Advocate @ IBM\\
   andrea.frittoli@uk.ibm.com \\
-  \faTwitter ~@blackchip76 \\
+  \faTwitter ~@blackchip76 | \faGithub ~afrittoli\\
 }
 
 \usetheme{af}
@@ -53,26 +53,67 @@
 %   \frametitle{Agenda}
 % \end{lpicrblack}
 
-% \begin{speakerframe}[af_wind.jpg]{Andrea Frittoli}%
-%   {%
-%   \faGithub ~afrittoli | \faLinkedin ~andreafrittoli | \faTwitter ~@blackchip76
-%   }%
-%   {%
-%   \begin{itemize}
-%     \item{Open Source Advocate @ IBM}
-%     \item{Lives in Wales, enjoys the wind}
-%     \item{CDEvents maintainer, Events SIG co-chair}
-%     \item{CDF Technical Oversight Committee \\ Governing Board}
-%   \end{itemize}
-%   }%
-% \end{speakerframe}
+\begin{speakerframe}[af_wind.jpg]{Andrea Frittoli}%
+  {%
+  \faGithub ~afrittoli | \faLinkedin ~andreafrittoli | \faTwitter ~@blackchip76
+  }%
+  {%
+  \begin{itemize}
+    \item{Open Source Advocate @ IBM}
+    \item{Lives in Wales, enjoys the wind}
+    \item{CDEvents maintainer, Events SIG co-chair}
+    \item{Chair of CDF Technical Oversight Committee \\ Governing Board}
+  \end{itemize}
+  }%
+\end{speakerframe}
 
 \section[CDEvents]{A common specification for Continuous Delivery events}
 \begin{sectionwithpicmediumcentral}[cdeventscon-gradient-16-9.jpg]{}
 \end{sectionwithpicmediumcentral}
 \note[itemize]{
-  \item What's CDEvents
-  \item Incubated at CDF since 2022
+  \item How many of you are familiar with CDEvents?
+  \item Let's take a step back
+  \item Why events in Continuous Delivery?
+}
+
+\begin{blackframe}
+  \frametitle{Events in Continuous Delivery}
+\end{blackframe}
+\note[itemize]{
+  Event driven workflows
+  \begin{itemize}
+    \item Scalable
+    \item Decoupled
+    \item Flexible
+    \item Policy Driven
+  \end{itemize}
+  Observability of CI/CD pipelines
+  \begin{itemize}
+    \item Metrics
+    \item Notification
+    \item Single View
+  \end{itemize}
+}
+
+\begin{blackframe}
+  \frametitle{Event Driven Workflows}
+\end{blackframe}
+\note[itemize]{
+  \item Example(s) of event driven
+  \item Multiple sources to trigger build
+  \item Multiple sources to trigger Deployment
+  \item Multiple listeners to build events
+  \item Policies
+  \item Build a diagram, show the need for interoperability
+}
+
+\begin{blackframe}
+  \frametitle{Observability}
+\end{blackframe}
+\note[itemize]{
+  \item Metrics: unique combinations of tools
+  \item Notifications: template to fetch data from multiple sources
+  \item Build a diagram, show the need for interoperability
 }
 
 \begin{lpicrblack}[whycdevents]{}%
@@ -114,6 +155,25 @@
   \end{itemize}
 }
 
+\begin{blackframe}
+  \frametitle{History of CDEvents}
+\end{blackframe}
+\note[itemize]{
+  \item Incubated at the CDF since 2022
+  \item Release v0.1 announced at the CDSummit in Detroit, Nov? 2022
+  \item Scope:
+  \begin{itemize}
+    \item Orchestration
+    \item Software Configuration Management
+    \item Continuous Integration
+    \item Continuous Deployment
+  \end{itemize}
+  DevOps Metrics:
+  \begin{itemize}
+    \item Lead Time for Changes
+    \item Deployment Frequency
+  \end{itemize}
+}
 
 \section{What's New}
 \begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
@@ -122,29 +182,25 @@
 \begin{tpicstripedframe}%
   {cdevents-banner.png}
   {%
-  \large{CDEvents Release 0.1!}
+  \large{Specification}
   ~ \\
   ~ \\
-  Announced at the CDSummit in Detroit
+  CDEvents v0.3 Release
   }%
   {%
-  Event Phases:
+  Incident Events:
   \begin{itemize}
-    \item Orchestration
-    \item Software Configuration Management
-    \item Continuous Integration
-    \item Continuous Deployment
+    \item A
   \end{itemize}
   }%
   {%
-  DevOps Metrics:
+  Test Events:
   \begin{itemize}
-    \item Lead Time for Changes
-    \item Deployment Frequency
+    \item B
   \end{itemize}
   }%
   {%
-  SDKs \\
+  Software Supply Chain Security \\
   \vspace{0.01\textheight}
   \begin{itemize}
     \item Go (released)
@@ -153,35 +209,103 @@
   \end{itemize}
   }%
 \end{tpicstripedframe}
+\note[itemize]{
+  \item Improved readability of the specification
+  \item Examples for each event type
+  \item Refreshed web site
+  \item Golang SDK v0.3, now generated from JSON schemas
+  \item Java SDK published to Maven Central
+  \item Python SDK published to PyPi
+}
 
-\begin{lpicrblack}[benjamin-rascoe-braMiRFMHPk-unsplash]{Photo by \href{https://unsplash.com/@dapperprofessional}{\underline{Benjamin Rascoe}}, CC0}%
-  {%
-  Website refresh
-  \begin{itemize}
-    \item Target Audiences
-    \item Simplified DevEx
-    \item Accessibility 
-  \end{itemize}
-  ~ \\
-  SDKs
-  \begin{itemize}
-    \item Java SDK for v0.1 (Spinnaker, Fidelity)
-  \end{itemize}
-  ~ \\
-  Specification
-  \begin{itemize}
-    \item Incidents \& Remediations
-    \item Connecting events
-  \end{itemize}
-  ~ \\
-  Tools
-  \begin{itemize}
-    \item Spinnaker
-  \end{itemize}
-  }%
-  {0.3}
-  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Working In Progress}
-\end{lpicrblack}
+\begin{blackframe}
+  \frametitle{SDKs}
+\end{blackframe}
+\note[itemize]{
+  \item Golang SDK v0.3, now generated from JSON schemas
+  \item Java SDK published to Maven Central
+  \item Python SDK published to PyPi
+  \item CDEventer?
+}
+
+\section{What's New - Tools}
+\begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
+\end{sectionwithpiclargecentral}
+
+\begin{blackframe}
+  \frametitle{Overview}
+\end{blackframe}
+\note[itemize]{
+  \item Jenkins
+  \item Spinnaker
+  \item Testkube
+  \item Tekton (experimental)
+  \item Argo Rollout (PoC)
+  \item Flux (PoC)
+}
+
+\begin{blackframe}
+  \frametitle{Jenkins}
+\end{blackframe}
+\note[itemize]{
+  \item Check with Jamie for diagram
+}
+
+\begin{blackframe}
+  \frametitle{Spinnaker}
+\end{blackframe}
+\note[itemize]{
+  \item Check with Ben, can we mention Apple
+}
+
+\begin{blackframe}
+  \frametitle{Testkube}
+\end{blackframe}
+\note[itemize]{
+  \item Check with Bruno for diagram
+}
+
+\begin{blackframe}
+  \frametitle{Tekton}
+\end{blackframe}
+\note[itemize]{
+  \item CI Notifications
+  \item CD Notifications
+  \item Release automation
+}
+
+\section{How to Adopt CDEvents}
+\begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
+\end{sectionwithpiclargecentral}
+
+% \begin{lpicrblack}[benjamin-rascoe-braMiRFMHPk-unsplash]{Photo by \href{https://unsplash.com/@dapperprofessional}{\underline{Benjamin Rascoe}}, CC0}%
+%   {%
+%   Website refresh
+%   \begin{itemize}
+%     \item Target Audiences
+%     \item Simplified DevEx
+%     \item Accessibility 
+%   \end{itemize}
+%   ~ \\
+%   SDKs
+%   \begin{itemize}
+%     \item Java SDK for v0.1 (Spinnaker, Fidelity)
+%   \end{itemize}
+%   ~ \\
+%   Specification
+%   \begin{itemize}
+%     \item Incidents \& Remediations
+%     \item Connecting events
+%   \end{itemize}
+%   ~ \\
+%   Tools
+%   \begin{itemize}
+%     \item Spinnaker
+%   \end{itemize}
+%   }%
+%   {0.3}
+%   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Working In Progress}
+% \end{lpicrblack}
 
 \section{Roadmap}
 \begin{sectionwithpiclargecentral}[dimitar-donovski-yrjB4dYWUZU-unsplash.jpg]{Photo by \href{https://unsplash.com/@dmtrdon}{\underline{Dimitar Donovski}}, CC0}
@@ -190,7 +314,7 @@
 \begin{stripedframe}%
   {%
   CDEvents Roadmap \\
-  v0.2 and beyond \\
+  v0.4 and beyond \\
   ~
   }%
   {%
@@ -237,6 +361,20 @@
   \end{itemize}
   }%
 \end{stripedframe}
+\note[itemize]{
+  \item Roadmap to be updated
+  \item SDK Rust/JS?
+}
+
+\begin{blackframe}
+  \frametitle{Collaborations}
+\end{blackframe}
+\note[itemize]{
+  \item CDF, Reference Architecture
+  \item Workshop working group
+  \item VSMI
+  \item CNCF TAG App Delivery
+}
 
 \begin{stripedframe}%
   {%
@@ -290,6 +428,9 @@
   \end{itemize}
   }%
 \end{stripedframe}
+\note[itemize]{
+  \item To be updated, maybe change to an how to contribute
+}
 
 \section[Thank You]{Thank You!}
 
