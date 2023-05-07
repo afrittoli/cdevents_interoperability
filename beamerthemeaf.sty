@@ -139,23 +139,25 @@
     \begin{tikzpicture}
       \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
       \fill[color=myblack] (0, 0.86\paperheight) rectangle (\the\paperwidth, \the\paperheight);
-      \fill[color=myblack, opacity=0.8] (0.46\paperwidth, 0) rectangle (\the\paperwidth, 0.44\paperheight);
-      \fill[color=myblack, opacity=0.4] (0, 0) rectangle (0.49\paperwidth, 0.44\paperheight);
-      \fill[color=mylightgray, opacity=0.8] (0, 0.39\paperheight) rectangle (0.49\paperwidth, 0.86\paperheight);
-      \fill[color=myblack, opacity=0.4] (0.46\paperwidth, 0.39\paperheight) rectangle (\the\paperwidth, 0.86\paperheight);
+      \fill[color=mylightgray, opacity=0.8] (0.46\paperwidth, 0) rectangle (\the\paperwidth, 0.44\paperheight);
+      \fill[color=cdevents3, opacity=0.8] (0, 0) rectangle (0.49\paperwidth, 0.44\paperheight);
+      \fill[color=cdevents1, opacity=0.8] (0, 0.39\paperheight) rectangle (0.49\paperwidth, 0.86\paperheight);
+      \fill[color=cdevents2, opacity=0.8] (0.46\paperwidth, 0.39\paperheight) rectangle (\the\paperwidth, 0.86\paperheight);
     \end{tikzpicture}
   }
   \begin{frame}[c]
     \frametitle{#1}
     \begin{columns}[T,totalwidth=\textwidth]
       \column{0.5\textwidth}
-        #2
         \settextcolour{white}
+        #2
         \vspace{0.05\paperheight}
+        \settextcolour{white}
         #3
       \column{0.5\textwidth}
-      \settextcolour{white}
+        \settextcolour{black}
         #4
+        \settextcolour{white}
     \end{columns}
 }
 {

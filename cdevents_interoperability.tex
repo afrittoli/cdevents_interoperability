@@ -282,13 +282,23 @@
   \item Improved readability of the specification
   \item Examples for each event type
   \item Refreshed web site
-  \item Golang SDK v0.3, now generated from JSON schemas
-  \item Java SDK published to Maven Central
-  \item Python SDK published to PyPi
 }
 
 \begin{blackframe}
   \frametitle{SDKs}
+  Features:
+  \begin{itemize}
+    \item JSONSchema Validation
+    \item SDK Generated from schemas (Golang)
+    \item Improved testing
+  \end{itemize}
+  ~ \\
+  Releases:
+  \begin{itemize}
+    \item Golang SDK v0.3 released
+    \item Java SDK v0.1 (draft) available on maven central
+    \item Python SDK v0.1 soon to be on PyPi
+  \end{itemize}
 \end{blackframe}
 \note[itemize]{
   \item Golang SDK v0.3, now generated from JSON schemas
@@ -301,9 +311,44 @@
 \begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
 \end{sectionwithpiclargecentral}
 
-\begin{blackframe}
-  \frametitle{Overview}
-\end{blackframe}
+\begin{3squares}{Overview}{%
+    Available:
+    \begin{itemize}
+      \item Jenkins (plugin published)
+      \item Tekton (experimental)
+    \end{itemize}
+    ~ \\
+    ~ \\
+    ~ \\
+    ~ \\
+  }{%
+    Work in Progress:
+    \begin{itemize}
+      \item Spinnaker (RFC approved)
+      \item Testkube
+    \end{itemize}
+    ~ \\
+    ~ \\
+  }{%
+    CNCF Projects:
+    \begin{itemize}
+      \item Argo
+      \item Flux
+      \item Harbour
+    \end{itemize}
+    ~ \\
+    ~ \\
+    ~ \\
+    ~ \\
+    Other Projects:
+    \begin{itemize}
+      \item Tracetest
+      \item JReleaser
+      \item Shipwright
+      \item Jenkins-X
+    \end{itemize}
+  }
+\end{3squares}
 \note[itemize]{
   \item Jenkins
   \item Spinnaker
@@ -313,29 +358,32 @@
   \item Flux (PoC)
 }
 
-\begin{blackframe}
+\begin{grayframe}
   \frametitle{Jenkins}
-\end{blackframe}
-\note[itemize]{
-  \item Check with Jamie for diagram
-}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
+  \end{textblock*}
+\end{grayframe}
 
 \begin{blackframe}
   \frametitle{Spinnaker}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.07\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Spinnaker.png}
+  \end{textblock*}
 \end{blackframe}
-\note[itemize]{
-  \item Check with Ben, can we mention Apple
-}
 
-\begin{blackframe}
+\begin{grayframe}
   \frametitle{Testkube}
-\end{blackframe}
-\note[itemize]{
-  \item Check with Bruno for diagram
-}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Testkube.png}
+  \end{textblock*}
+\end{grayframe}
 
 \begin{blackframe}
   \frametitle{Tekton}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.13\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Tekton.png}
+  \end{textblock*}
 \end{blackframe}
 \note[itemize]{
   \item CI Notifications
@@ -343,48 +391,42 @@
   \item Release automation
 }
 
-\begin{blackframe}
-  \frametitle{Lessons Learnt}
-\end{blackframe}
-\note[itemize]{
-  \item How to adopt CDEvents
-  \item Start small, iterate
-  \item Get adopters involved
-  \item Collaboration between open source communmities
-  \item Spec Examples
-  \item SDK docs and Examples
-  \item SDK conformance
-  \item Generate docs and SDKs from single source
+\begin{3squares}{Lessons Learnt}{%
+  Adoption:
+  \begin{itemize}
+    \item Reference Architecture
+    \item Event Broker
+    \item Responding to events
+    \item Incremental adoption
+    \item Community
+  \end{itemize}
+}{%
+  Specification:
+  \begin{itemize}
+    \item Examples events
+    \item Example implementations
+    \item Generate docs from schema
+  \end{itemize}
+  ~ \\
+}{%
+  SDKs:
+  \begin{itemize}
+    \item Generate SDKs from schema
+    \item SDK documentation
+    \item SDK validation
+    \item JS, Rust
+  \end{itemize}
+  ~ \\
+  ~ \\
+  Community:
+  \begin{itemize}
+    \item CDF, Special Interest Groups
+    \item End Users use events today
+    \item Collaboration with tool communities
+    \item Collaboration with other foundations
+  \end{itemize}
 }
-
-% \begin{lpicrblack}[benjamin-rascoe-braMiRFMHPk-unsplash]{Photo by \href{https://unsplash.com/@dapperprofessional}{\underline{Benjamin Rascoe}}, CC0}%
-%   {%
-%   Website refresh
-%   \begin{itemize}
-%     \item Target Audiences
-%     \item Simplified DevEx
-%     \item Accessibility 
-%   \end{itemize}
-%   ~ \\
-%   SDKs
-%   \begin{itemize}
-%     \item Java SDK for v0.1 (Spinnaker, Fidelity)
-%   \end{itemize}
-%   ~ \\
-%   Specification
-%   \begin{itemize}
-%     \item Incidents \& Remediations
-%     \item Connecting events
-%   \end{itemize}
-%   ~ \\
-%   Tools
-%   \begin{itemize}
-%     \item Spinnaker
-%   \end{itemize}
-%   }%
-%   {0.3}
-%   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Working In Progress}
-% \end{lpicrblack}
+\end{3squares}
 
 \section{Roadmap}
 \begin{sectionwithpiclargecentral}[dimitar-donovski-yrjB4dYWUZU-unsplash.jpg]{Photo by \href{https://unsplash.com/@dmtrdon}{\underline{Dimitar Donovski}}, CC0}
@@ -399,61 +441,66 @@
   {%
   Supply Chain Security
   \begin{itemize}
-    \item SBOM, Provenance, Signatures
+    \item SBOM, Provenance
   \end{itemize}
   \begin{itemize}
     \item Signed Events
   \end{itemize}
   }%
   {%
-  E2E Supply Chain \\
-  ~
-  \begin{itemize}
-    \item Requirements
-    \item Releases
-    \item Production
-    \item Incidents
-    \item Remediations
-  \end{itemize}
-  }%
-  {%
   New features \\
   ~
   \begin{itemize}
-    \item Compositions
     \item Links, Workflow IDs
-    \item SDKs
-    \item Policy Driven Workflow
+    \item Compositions
+    \item Releases
   \end{itemize}
   }%
   {%
-  Data Model \\
+  Software \& Architecture\\
   ~
   \begin{itemize}
-    \item SCM Events
-    \item Tests
+    \item SDKs (JS, Rust)
+    \item Adapters
+    \item Proof of concept
+    \item Broker, Policy
   \end{itemize}
+  }%
+  {%
   Documentation:
   \begin{itemize}
-    \item Architecture
-    \item Examples
+    \item Reference Architecture
+    \item Example events
+    \item Example implementations
   \end{itemize}
   }%
 \end{stripedframe}
-\note[itemize]{
-  \item Roadmap to be updated
-  \item SDK Rust/JS?
-}
 
-\begin{blackframe}
-  \frametitle{Collaborations}
-\end{blackframe}
-\note[itemize]{
-  \item CDF, Reference Architecture
-  \item Workshop working group
-  \item VSMI
-  \item CNCF TAG App Delivery
-}
+\begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
+  Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
+  }%
+  {%
+  \begin{itemize}
+    \item CDF, SIG Interop:\\
+    Reference Architecture
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item CNCF TAG App Delivery
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item Value Stream Management\\
+          Interoperability (VSMI) TC
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item CDF, Workshop working group
+  \end{itemize}
+  }%
+  {0.35}
+  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
+\end{lpicrblack}
 
 \begin{stripedframe}%
   {%
@@ -488,7 +535,6 @@
   \begin{itemize}
     \item Ericsson
     \item IBM / RedHat
-    \item doWhile
     \item Apple
     \item VMWare
     \item Fidelity
@@ -507,9 +553,6 @@
   \end{itemize}
   }%
 \end{stripedframe}
-\note[itemize]{
-  \item To be updated, maybe change to an how to contribute
-}
 
 \section[Thank You]{Thank You!}
 
