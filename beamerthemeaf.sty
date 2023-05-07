@@ -388,16 +388,38 @@
   \end{frame}
 }
 
+\newenvironment{textondarkpic}[2][]
+{
+  \setbeamercolor*{frametitle}{fg=white}
+  \settextcolour{white}
+  \setbeamertemplate{background}{
+    \includegraphics[height=\paperheight]{img/#1}
+  }
+  \setwhitelogofootline{notext}
+  \begin{frame}
+    \begin{textblock*}{0.4\paperwidth}(0.005\paperwidth,0.97\paperheight)
+      \begin{beamercolorbox}[wd=0.4\paperwidth]{photolicense}
+        \usebeamerfont{photolicense}#2%
+      \end{beamercolorbox}%
+      \vfill
+    \end{textblock*}
+}
+{
+  \end{frame}
+}
+
 % #1 Speaker Pic
 % #2 Speaker name
 % #3 Speaker name subtitle - e.g. social
 % #4 Test in the middle
 \newenvironment<>{speakerframe}[4][]
 {
-  \setwhitefootline{}
-  \setbeamertemplate{background}{
-    \includegraphics[width=\paperwidth,height=\paperheight]{img/cdeventscon-gradient-16-9.jpg}
+  \setbeamertemplate{background canvas}{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node [rectangle, top color=cdconblue, bottom color=cdconblue, shading=axis, shading angle=33.02, anchor=north, minimum width=\paperwidth, minimum height=\paperheight] (box) at (current page.north){};
+    \end{tikzpicture}%
   }
+  \setwhitelogofootline{}
   \settextcolour{white}
   \begin{frame}[t]
     \begin{textblock*}{0.45\paperwidth}(0.55\paperwidth,0cm)
@@ -423,6 +445,36 @@
 }
 {
   \end{frame}
+}
+
+\newenvironment{whitetextontwopics}[4][]
+{
+  \setbeamercolor*{frametitle}{fg=white}
+  \settextcolour{white}
+  \setwhitelogofootline{}
+  \begin{frame}[c]
+    \begin{textblock*}{0.5\paperwidth}(0\paperwidth,0\paperheight)
+      \includegraphics[height=\paperheight]{img/#1}
+    \end{textblock*}
+    \begin{textblock*}{0.4\paperwidth}(0.02\paperwidth,0.02\paperheight)
+      \begin{beamercolorbox}[wd=0.4\paperwidth]{section page header}
+        \usebeamerfont{section page header}#2
+      \end{beamercolorbox}%
+      \vfill
+    \end{textblock*}
+    \begin{textblock*}{0.5\paperwidth}(0.5\paperwidth,0\paperheight)
+      \includegraphics[height=\paperheight]{img/#3}
+    \end{textblock*}
+    \begin{textblock*}{0.4\paperwidth}(0.52\paperwidth,0.02\paperheight)
+      \begin{beamercolorbox}[wd=0.4\paperwidth]{section page header}
+        \usebeamerfont{section page header}#4
+      \end{beamercolorbox}%
+      \vfill
+    \end{textblock*}
+}
+{
+  \end{frame}
+  \setblacklogofootline
 }
 
 % Code listing style

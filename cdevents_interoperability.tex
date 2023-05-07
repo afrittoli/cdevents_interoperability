@@ -18,6 +18,8 @@
   Developer Advocate @ IBM\\
   andrea.frittoli@uk.ibm.com \\
   \faTwitter ~@blackchip76 | \faGithub ~afrittoli\\
+  ~\\
+  Session: \href{https://sched.co/1KUH8}{sched.co/1KUH8}
 }
 
 \usetheme{af}
@@ -42,17 +44,6 @@
 \titlepage{}
 \end{frame}
 
-% No table of contents for a lightning talk
-% \begin{lpicrblack}[chewy-I-rgDPLKogs-unsplash.jpg]{%
-%   Photo by \href{https://unsplash.com/@chewy}{\underline{Chewy}}, CC0
-%   }%
-%   {%
-%   \tableofcontents
-%   }%
-%   {}
-%   \frametitle{Agenda}
-% \end{lpicrblack}
-
 \begin{speakerframe}[af_wind.jpg]{Andrea Frittoli}%
   {%
   \faGithub ~afrittoli | \faLinkedin ~andreafrittoli | \faTwitter ~@blackchip76
@@ -67,7 +58,46 @@
   }%
 \end{speakerframe}
 
+\begin{lpicrblack}[calum-lewis-vA1L1jRTM70-unsplash.jpg]{%
+  Photo by \href{https://unsplash.com/@calumlewis}{\underline{Calum Lewis}}, CC0
+  }%
+  {%
+  \tableofcontents
+  }%
+  {}
+  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contents}
+\end{lpicrblack}
+
 \section[CDEvents]{A common specification for Continuous Delivery events}
+
+\begin{grayframe}
+  \frametitle{Continuous Delivery Pipeline}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
+  \end{textblock*}
+\end{grayframe}
+
+\begin{grayframe}
+  \frametitle{Integrations}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-2-no-events-multiple.png}
+  \end{textblock*}
+\end{grayframe}
+
+\begin{whitetextontwopics}[shutterstock_1044739930.jpg]{%
+  % by Igor Bulgarin
+  % Shutterstock editorial license: https://support.shutterstock.com/s/article/Premier-Editorial-Content?language=en_US
+  % https://www.shutterstock.com/image-photo/dnipro-ukraine-march-12-2018-four-1044739930
+  Orchestration
+  }{shutterstock_1483333925.jpg}{%
+  Choreography
+  % by A_Lesik
+  % Shutterstock editorial license: https://support.shutterstock.com/s/article/Premier-Editorial-Content?language=en_US
+  % https://www.shutterstock.com/image-photo/odessa-ukraine-july22-2019-ballet-classical-1483333925
+  }%
+  \frametitle{Orchestration vs. Choreography}
+\end{whitetextontwopics}
+
 \begin{sectionwithpicmediumcentral}[cdeventscon-gradient-16-9.jpg]{}
 \end{sectionwithpicmediumcentral}
 \note[itemize]{
@@ -76,41 +106,53 @@
   \item Why events in Continuous Delivery?
 }
 
-\begin{blackframe}
-  \frametitle{Events in Continuous Delivery}
-\end{blackframe}
+\begin{grayframe}
+  \frametitle{Interoperability}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-3-events.png}
+  \end{textblock*}
+\end{grayframe}
 \note[itemize]{
-  Event driven workflows
+  \item Event driven workflows
   \begin{itemize}
     \item Scalable
     \item Decoupled
     \item Flexible
     \item Policy Driven
   \end{itemize}
-  Observability of CI/CD pipelines
+  \begin{itemize}
+    \item Multiple sources to trigger build
+    \item Multiple sources to trigger Deployment
+    \item Multiple listeners to build events
+    \item Policies
+  \end{itemize}
+}
+
+\begin{textondarkpic}[anthony-yin-okEUu6AMO2Y-unsplash]{%
+  Photo by \href{https://unsplash.com/@anthonyin}{\underline{Anthony Yin}}, CC0
+  }%
+  \frametitle{Observability}
+  \begin{itemize}
+    \item What's running right now?
+    \item What steps were executed?
+    \item Where did things go wrong?
+    \item How long did it take?
+  \end{itemize}
+\end{textondarkpic}
+
+\begin{grayframe}
+  \frametitle{Interoperability \& Observability}
+  \begin{textblock*}{0.80\paperwidth}(0.10\paperwidth,0.15\paperheight)
+    \includegraphics[width=0.80\paperwidth]{img/cdevents-4-interoperability.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item Observability of CI/CD pipelines
   \begin{itemize}
     \item Metrics
     \item Notification
     \item Single View
   \end{itemize}
-}
-
-\begin{blackframe}
-  \frametitle{Event Driven Workflows}
-\end{blackframe}
-\note[itemize]{
-  \item Example(s) of event driven
-  \item Multiple sources to trigger build
-  \item Multiple sources to trigger Deployment
-  \item Multiple listeners to build events
-  \item Policies
-  \item Build a diagram, show the need for interoperability
-}
-
-\begin{blackframe}
-  \frametitle{Observability}
-\end{blackframe}
-\note[itemize]{
   \item Metrics: unique combinations of tools
   \item Notifications: template to fetch data from multiple sources
   \item Build a diagram, show the need for interoperability
@@ -118,9 +160,6 @@
 
 \begin{lpicrblack}[whycdevents]{}%
   {%
-  \textbf{Interoperability!} \\
-  ~ \\
-  Use Cases:
   \begin{itemize}
     \item Event driven workflows
     \begin{itemize}
@@ -134,10 +173,12 @@
       \item Notifications
       \item Single View
     \end{itemize}
+    ~ \\
+    \textbf{Interoperability!} \\
   \end{itemize}
   }%
-  {0.3}
-  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Why CDEvents}
+  {0.60}
+  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Why CDEvents}
 \end{lpicrblack}
 \note[itemize]{
   Event driven workflows
@@ -155,12 +196,35 @@
   \end{itemize}
 }
 
-\begin{blackframe}
+\begin{lgrayframerpic}[jon-tyson-FlHdnPO6dlw-unsplash]{%
+  Photo by \href{https://unsplash.com/@jontyson}{\underline{Jon Tyson}}, CC0
+  }%
+  {%
+  \begin{itemize}
+    \item Interoperability and Events Special Interest Groups
+    \item First Commit Oct 2020 
+    \item Incubated at the CDF since 2022
+  \end{itemize}
+  ~\\
+  \begin{itemize}
+    \item Release v0.1 announced at the CDSummit in Detroit
+    \begin{itemize}
+      \item Orchestration
+      \item Software Configuration Management
+      \item Continuous Integration \& Deployment
+      \item CloudEvents Binding
+      \item Golang SDK
+      \item DevOps Metrics
+    \end{itemize}
+  \end{itemize}
+  }%
+  {0.65}
   \frametitle{History of CDEvents}
-\end{blackframe}
+\end{lgrayframerpic}
 \note[itemize]{
   \item Incubated at the CDF since 2022
-  \item Release v0.1 announced at the CDSummit in Detroit, Nov? 2022
+  \item CDEventsCon May 2022
+  \item Release v0.1, CDSummit in Detroit, Nov 2022
   \item Scope:
   \begin{itemize}
     \item Orchestration
@@ -182,30 +246,35 @@
 \begin{tpicstripedframe}%
   {cdevents-banner.png}
   {%
-  \large{Specification}
-  ~ \\
-  ~ \\
-  CDEvents v0.3 Release
-  }%
-  {%
   Incident Events:
   \begin{itemize}
-    \item A
+    \item Continuous Operations
+    \item Modeled after DORA
+    \item Remediation Automation
   \end{itemize}
   }%
   {%
   Test Events:
   \begin{itemize}
-    \item B
+    \item Notifications
+    \item Test Driven Automation
+    \item Metrics
   \end{itemize}
   }%
   {%
   Software Supply Chain Security \\
   \vspace{0.01\textheight}
   \begin{itemize}
-    \item Go (released)
-    \item Python (soon)
-    \item Java (WIP)
+    \item Artifact Signed event
+    \item Build \& Deployment Automation
+  \end{itemize}
+  }%
+  {%
+  Quality of life improvements
+  \begin{itemize}
+    \item Improved readability
+    \item Examples for each event
+    \item Refreshed web site
   \end{itemize}
   }%
 \end{tpicstripedframe}
@@ -228,8 +297,8 @@
   \item CDEventer?
 }
 
-\section{What's New - Tools}
-\begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
+\section{Tools Adoption}
+\begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
 \end{sectionwithpiclargecentral}
 
 \begin{blackframe}
@@ -274,9 +343,19 @@
   \item Release automation
 }
 
-\section{How to Adopt CDEvents}
-\begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
-\end{sectionwithpiclargecentral}
+\begin{blackframe}
+  \frametitle{Lessons Learnt}
+\end{blackframe}
+\note[itemize]{
+  \item How to adopt CDEvents
+  \item Start small, iterate
+  \item Get adopters involved
+  \item Collaboration between open source communmities
+  \item Spec Examples
+  \item SDK docs and Examples
+  \item SDK conformance
+  \item Generate docs and SDKs from single source
+}
 
 % \begin{lpicrblack}[benjamin-rascoe-braMiRFMHPk-unsplash]{Photo by \href{https://unsplash.com/@dapperprofessional}{\underline{Benjamin Rascoe}}, CC0}%
 %   {%
