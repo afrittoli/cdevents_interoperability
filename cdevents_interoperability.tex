@@ -68,7 +68,13 @@
   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contents}
 \end{lpicrblack}
 
-\section[SoftwareFactory]{Software Factory}
+\section[Software Factory]{Software Factory}
+
+\begin{sectionwithpiclargecentral}[jezael-melgoza-HYQvV8wWX18-unsplash.jpg]{Photo by \href{https://unsplash.com/@jezar}{\underline{Jezael Melgoza}}, CC0}
+\end{sectionwithpiclargecentral}
+\note[itemize]{
+  \item Use some factory picture
+}
 
 \begin{grayframe}
   \frametitle{Software Factory}
@@ -84,10 +90,27 @@
   \item Use existing diagrams, the second diagram from the google slides version
 }
 
+\begin{blackframe}
+  \frametitle{Software Factory}
+  \begin{itemize}
+    \item "Glue code" explosion
+    \item Does not scale
+    \item Expensive to onboard \\new services
+    \item Hard to maintain
+  \end{itemize}
+  \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
+    \includegraphics[width=0.60\paperwidth]{img/cdevents-multiple-components.png}
+  \end{textblock*}
+\end{blackframe}
+\note[itemize]{
+  \item 2. Multiple components, more requirements (glue code)
+  \item Use existing diagrams, the second diagram from the google slides version
+}
+
 \begin{grayframe}
-  \frametitle{Internal Development Portal}
+  \frametitle{Internal Development Platform}
   \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-idp.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
@@ -98,10 +121,26 @@
   \item Draw two diagrams with IDP
 }
 
+\begin{blackframe}
+  \frametitle{Internal Development Platform}
+  \begin{itemize}
+    \item Lock-in effect
+    \item Missing/Broken Data
+    \item Many Dashboards
+  \end{itemize}
+  \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
+    \includegraphics[width=0.60\paperwidth]{img/cdevents-idp-multiple.png}
+  \end{textblock*}
+\end{blackframe}
+\note[itemize]{
+  \item 2. Multiple triggers, 1 dashboard, evidence store (metrics, audit)
+  \item Draw two diagrams with IDP
+}
+
 \begin{grayframe}
   \frametitle{A Plethora of Tools}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
+  \begin{textblock*}{1.0\paperwidth}(0\paperwidth,0.18\paperheight)
+    \includegraphics[width=1.0\paperwidth]{img/landscape.cd.foundation.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
@@ -122,8 +161,13 @@
 
 \begin{grayframe}
   \frametitle{Interoperability}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-3-events.png}
+  \begin{itemize}
+    \item Less "Glue Code"
+    \item More focus on DevEx \\
+          and DevOps metrics
+  \end{itemize}
+  \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
+    \includegraphics[width=0.60\paperwidth]{img/cdevents-4-Interoperability.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
@@ -137,12 +181,16 @@
 \begin{textondarkpic}[anthony-yin-okEUu6AMO2Y-unsplash]{%
   Photo by \href{https://unsplash.com/@anthonyin}{\underline{Anthony Yin}}, CC0
   }%
-  \frametitle{Observability}
+  \frametitle{Evidence Store\\Supply Chain Security}
   \begin{itemize}
-    \item What's running right now?
-    \item Where is this code deployed?
-    \item How was this code built?
-    \item How long did it take?
+    \item Where is this code deployed?\\
+          ~~Tracking vulnerabilities\\~
+    \item How was this code built?\\
+          ~~Audit and compliance\\~
+    \item How long did it take?\\
+          ~~DevOps Metrics\\~
+    \item What's happening right now?\\
+          ~~One overview dashboard for all needs
   \end{itemize}
 \end{textondarkpic}
 \note[itemize]{
@@ -153,98 +201,158 @@
 }
 
 \begin{grayframe}
-  \frametitle{Better DevEx}
-  \begin{textblock*}{0.80\paperwidth}(0.10\paperwidth,0.15\paperheight)
-    \includegraphics[width=0.80\paperwidth]{img/cdevents-4-interoperability.png}
+  \frametitle{IDP and DevEx}
+  \begin{itemize}
+    \item Add/swap tools
+    \item Consistent Data
+    \item Single Dashboard
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item Promotes Collaboration \\
+          through Open Source
+    \item CDEvents and \href{CNOE.io}{https://cnoe.io}
+  \end{itemize}
+  \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
+    \includegraphics[width=0.60\paperwidth]{img/cdevents-idp-cdevents.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
   \item From custom solutions to Open Source
   \item CNOE example, switch and combine tools
-  \item Draw a diagram similar to google slides one #16, but with IDP
-}
-
-\begin{lgrayframerpic}[jon-tyson-FlHdnPO6dlw-unsplash]{%
-  Photo by \href{https://unsplash.com/@jontyson}{\underline{Jon Tyson}}, CC0
-  }%
-  {%
-  \begin{itemize}
-    \item Interoperability and Events Special Interest Groups
-    \item First Commit Oct 2021
-    \item Incubated at the CDF since 2022
-  \end{itemize}
-  }%
-  {0.65}
-  \frametitle{History of CDEvents}
-\end{lgrayframerpic}
-\note[itemize]{
-  \item Add whitepaper, integrations and other events
-  \item or maybe remove completely
 }
 
 \begin{grayframe}
   \frametitle{Components}
   \begin{textblock*}{0.80\paperwidth}(0.10\paperwidth,0.15\paperheight)
-    \includegraphics[width=0.80\paperwidth]{img/cdevents-4-interoperability.png}
+    \includegraphics[width=0.80\paperwidth]{img/cdevents-components.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
   \item Components slide #14 from google slides
 }
 
-\begin{stripedframe}%
-  {%
-  Community
-  ~ \\
-  ~ \\
-  }%
-  {%
-  CDF \\
-  ~
+\begin{blackframe}
+  \frametitle{Community}
   \begin{itemize}
-    \item SIG Interop
-    \item SIG Supply Chain
-    \item SIG Best Practices
+    \item DevOps Engineers\\
+            ~~Share your Interoperability pain-points\\~
+    \item Tool Maintainer\\
+            ~~Adopt CDEvents for your tool\\~
+    \item DevOps Vendor\\
+            ~~Make it easier for users to integrate\\
+            ~~your offering by supporting CDEvents\\~
+    \item Love DevOps \& Interoperability\\
+            ~~Join us and contribute to CDEvents!
   \end{itemize}
-  }%
-  {%
-  Tools communities \\
-  ~
-  \begin{itemize}
-    \item Tekton
-    \item Spinnaker
-    \item Shipwright
-    \item Jenkins
-    \item Jenkins X
-    \item Flux, Argo
-  \end{itemize}
-  }%
-  {%
-  Companies \\
-  ~
-  \begin{itemize}
-    \item Ericsson
-    \item IBM / RedHat
-    \item Apple
-    \item VMWare
-    \item Fidelity
-    \item SAS
-  \end{itemize}
-  }%
-  {%
-  Get Involved!! \\
-  ~
-  \begin{itemize}
-    \item Specification
-    \item SDKs (Rust, JS, Ruby, C\#)
-    \item Tools
-    \item Proof-of-concepts
-    \item End users
-  \end{itemize}
-  }%
-\end{stripedframe}
+  \begin{textblock*}{0.45\paperwidth}(0.50\paperwidth,0.18\paperheight)
+    \includegraphics[width=0.45\paperwidth]{img/cdevents-community.png}
+  \end{textblock*}
+\end{blackframe}
 \note[itemize]{
-  \item Combine with Slide #15 from google slides
+  \item 2. Multiple triggers, 1 dashboard, evidence store (metrics, audit)
+  \item Draw two diagrams with IDP
+}
+
+\section{Tools Adoption}
+\begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
+\end{sectionwithpiclargecentral}
+
+\begin{3squares}{Overview}{%
+    CDF Projects:
+    \begin{itemize}
+      \item Jenkins
+      \item Spinnaker
+      \item Tekton (Experimental)
+    \end{itemize}
+    ~ \\
+    ~ \\
+    ~ \\
+  }{%
+  Other Projects:
+  \begin{itemize}
+    \item Updatecli
+    \item JReleaser
+    \item Guah.sh (OpenSSF)
+  \end{itemize}
+  }{%
+  CNCF Projects:
+  \begin{itemize}
+    \item Testkube
+    \item Flux
+    \item Argo CD (POC through Notifications)
+    \item Harbour (POC)
+  \end{itemize}
+  ~ \\
+  ~ \\
+  ~ \\
+  ~ \\
+  }
+\end{3squares}
+\note[itemize]{
+  \item Update the list of tools. updatecli, jreleaser
+  \item Add notes for tools
+}
+
+\begin{grayframe}
+  \frametitle{All Together}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item Include a diagram of a POC with Jenkins, Tekton, Spinnaker
+  \item Include dotted SCM adapter
+  \item Include Events DB (ArangoDB), Harbour as registry (dotted)
+  \item Short time-slot, no time for temo
+}
+
+\begin{grayframe}
+  \frametitle{Successes and Challenges}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item Challenges:
+  \item Widespread adoption
+  \item Growing the community
+  \item Successes:
+  \item Tool adoption
+  \item End user adotion (Fidelity)
+  \item Growing community
+  \item Lessons Learnt:
+  \item Collaborations
+  \item Solve specific pain points
+}
+
+\begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
+  Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
+  }%
+  {%
+  \begin{itemize}
+    \item CDF, SIG Best Practices:\\
+    Reference Architecture
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item CNCF TAG App Delivery
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item Value Stream Management\\
+          Interoperability (VSMI) TC
+  \end{itemize}
+  ~ \\
+  \begin{itemize}
+    \item CDF, Workshop working group
+  \end{itemize}
+  }%
+  {0.35}
+  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
+\end{lpicrblack}
+\note[itemize]{
+  \item Update with google slide #26
 }
 
 \section{What's New}
@@ -252,21 +360,23 @@
 \end{sectionwithpiclargecentral}
 
 \begin{tpicstripedframe}%
-  {cdevents-banner.png}
+  {cdevents-banner-v0-4.png}
   {%
-  Incident Events:
+  Linked Events:
   \begin{itemize}
-    \item Continuous Operations
-    \item Modeled after DORA
-    \item Remediation Automation
+    \item Connect Events
+    \item Fast Filtering
+    \item Visualization
+    \item Audit Trail
   \end{itemize}
   }%
   {%
-  Test Events:
+  Ticket Events:
   \begin{itemize}
-    \item Notifications
-    \item Test Driven Automation
-    \item Metrics
+    \item Inception to Deployment
+    \item E2E Metrics
+    \item Ticket Based Automation
+    \item Interoperability
   \end{itemize}
   }%
   {%
@@ -287,158 +397,10 @@
   }%
 \end{tpicstripedframe}
 \note[itemize]{
-  \item Improved readability of the specification
-  \item Examples for each event type
-  \item Refreshed web site
+  \item Update to v0.4 items, various slides
+  \item 1. and 2. Content of release
+  \item 3. Content of Release, Link to release, link to blog post
 }
-
-\begin{blackframe}
-  \frametitle{SDKs}
-  Features:
-  \begin{itemize}
-    \item JSONSchema Validation
-    \item SDK Generated from schemas (Golang)
-    \item Improved testing
-  \end{itemize}
-  ~ \\
-  Releases:
-  \begin{itemize}
-    \item Golang SDK v0.3 released
-    \item Java SDK v0.1 (draft) available on maven central
-    \item Python SDK v0.1 soon to be on PyPi
-  \end{itemize}
-\end{blackframe}
-\note[itemize]{
-  \item Golang SDK v0.3, now generated from JSON schemas
-  \item Java SDK published to Maven Central
-  \item Python SDK published to PyPi
-  \item CDEventer?
-}
-
-\section{Tools Adoption}
-\begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
-\end{sectionwithpiclargecentral}
-
-\begin{3squares}{Overview}{%
-    Available:
-    \begin{itemize}
-      \item Jenkins (plugin published)
-      \item Tekton (experimental)
-    \end{itemize}
-    ~ \\
-    ~ \\
-    ~ \\
-    ~ \\
-  }{%
-    Work in Progress:
-    \begin{itemize}
-      \item Spinnaker (RFC approved)
-      \item Testkube
-    \end{itemize}
-    ~ \\
-    ~ \\
-  }{%
-    CNCF Projects:
-    \begin{itemize}
-      \item Argo
-      \item Flux
-      \item Harbour
-    \end{itemize}
-    ~ \\
-    ~ \\
-    ~ \\
-    ~ \\
-    Other Projects:
-    \begin{itemize}
-      \item Tracetest
-      \item JReleaser
-      \item Shipwright
-      \item Jenkins-X
-    \end{itemize}
-  }
-\end{3squares}
-\note[itemize]{
-  \item Jenkins
-  \item Spinnaker
-  \item Testkube
-  \item Tekton (experimental)
-  \item Argo Rollout (PoC)
-  \item Flux (PoC)
-}
-
-\begin{grayframe}
-  \frametitle{Jenkins}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
-  \end{textblock*}
-\end{grayframe}
-
-\begin{blackframe}
-  \frametitle{Spinnaker}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.07\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Spinnaker.png}
-  \end{textblock*}
-\end{blackframe}
-
-\begin{grayframe}
-  \frametitle{Testkube}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Testkube.png}
-  \end{textblock*}
-\end{grayframe}
-
-\begin{blackframe}
-  \frametitle{Tekton}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.13\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Tekton.png}
-  \end{textblock*}
-\end{blackframe}
-\note[itemize]{
-  \item CI Notifications
-  \item CD Notifications
-  \item Release automation
-}
-
-\begin{3squares}{Lessons Learnt}{%
-  Adoption:
-  \begin{itemize}
-    \item Reference Architecture
-    \item Event Broker
-    \item Responding to events
-    \item Incremental adoption
-    \item Community
-  \end{itemize}
-}{%
-  \tiny~\\
-  \normalsize
-  Specification:
-  \begin{itemize}
-    \item Examples events
-    \item Example implementations
-    \item Generate docs from schema
-  \end{itemize}
-  ~ \\
-}{%
-  SDKs:
-  \begin{itemize}
-    \item Generate SDKs from schema
-    \item SDK documentation
-    \item SDK validation
-    \item JS, Rust
-  \end{itemize}
-  ~ \\
-  ~ \\
-  \tiny~\\
-  \normalsize
-  Community:
-  \begin{itemize}
-    \item CDF, Special Interest Groups
-    \item End Users use events today
-    \item Collaboration with tool communities
-    \item Collaboration with other foundations
-  \end{itemize}
-}
-\end{3squares}
 
 \section{Roadmap}
 \begin{sectionwithpiclargecentral}[dimitar-donovski-yrjB4dYWUZU-unsplash.jpg]{Photo by \href{https://unsplash.com/@dmtrdon}{\underline{Dimitar Donovski}}, CC0}
@@ -447,7 +409,7 @@
 \begin{stripedframe}%
   {%
   CDEvents Roadmap \\
-  v0.4 and beyond \\
+  v0.5 and beyond \\
   ~
   }%
   {%
@@ -487,32 +449,20 @@
   \end{itemize}
   }%
 \end{stripedframe}
+\note[itemize]{
+  \item Update Roadmap
+  \item Include Experimental CDEvents projects (Visualization, adapter, plugins, more?)
+}
 
-\begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
-  Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
-  }%
-  {%
-  \begin{itemize}
-    \item CDF, SIG Best Practices:\\
-    Reference Architecture
-  \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item CNCF TAG App Delivery
-  \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item Value Stream Management\\
-          Interoperability (VSMI) TC
-  \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item CDF, Workshop working group
-  \end{itemize}
-  }%
-  {0.35}
-  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
-\end{lpicrblack}
+\begin{grayframe}
+  \frametitle{Conclusions}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item Google slides #27
+}
 
 \section[Thank You]{Thank You!}
 
@@ -535,5 +485,10 @@
   Andrea Frittoli | \href{mailto:andrea.frittoli@uk.ibm.com}{andrea.frittoli@uk.ibm.com} \\
   \faTwitter ~@blackchip76 | \faGithub ~afrittoli | \faLinkedin ~andreafrittoli
 \end{blackframe}
+\note[itemize]{
+  \item Update references
+  \item Blog post v0.4
+  \item Slash data report
+}
 
 \end{document}
