@@ -68,42 +68,56 @@
   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contents}
 \end{lpicrblack}
 
-\section[CDEvents]{A common specification for Continuous Delivery events}
+\section[SoftwareFactory]{Software Factory}
 
 \begin{grayframe}
-  \frametitle{Continuous Delivery Pipeline}
+  \frametitle{Software Factory}
   \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
     \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
   \end{textblock*}
 \end{grayframe}
+\note[itemize]{
+  \item Problem statement part 1 - Glue Code, Lack of Scalability
+  \item A couple of slides
+  \item 1. Simple build system
+  \item 2. Multiple components, more requirements (glue code)
+  \item Use existing diagrams, the second diagram from the google slides version
+}
 
 \begin{grayframe}
-  \frametitle{Integrations}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-2-no-events-multiple.png}
+  \frametitle{Internal Development Portal}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
   \end{textblock*}
 \end{grayframe}
+\note[itemize]{
+  \item Problem statement part 2 - Lock in effect, Loss of data
+  \item A couple of slides
+  \item 1. IDP architecture
+  \item 2. Multiple triggers, 1 dashboard, evidence store (metrics, audit)
+  \item Draw two diagrams with IDP
+}
 
-\begin{whitetextontwopics}[shutterstock_1044739930.jpg]{%
-  % by Igor Bulgarin
-  % Shutterstock editorial license: https://support.shutterstock.com/s/article/Premier-Editorial-Content?language=en_US
-  % https://www.shutterstock.com/image-photo/dnipro-ukraine-march-12-2018-four-1044739930
-  Orchestration
-  }{shutterstock_1483333925.jpg}{%
-  Choreography
-  % by A_Lesik
-  % Shutterstock editorial license: https://support.shutterstock.com/s/article/Premier-Editorial-Content?language=en_US
-  % https://www.shutterstock.com/image-photo/odessa-ukraine-july22-2019-ballet-classical-1483333925
-  }%
-  \frametitle{Orchestration vs. Choreography}
-\end{whitetextontwopics}
+\begin{grayframe}
+  \frametitle{A Plethora of Tools}
+  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.1\paperheight)
+    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item We need multiple tools to satisfy requirements, improve metrics
+  \item Added complexity, risk, skills required
+  \item We need data to satisfy requirements
+  \item Mention slashdata report
+  \item Use the landscape diagram
+}
+
+\section[CDEvents]{A common specification for Continuous Delivery Events}
 
 \begin{sectionwithpicmediumcentral}[cdeventscon-gradient-16-9.jpg]{}
 \end{sectionwithpicmediumcentral}
 \note[itemize]{
   \item How many of you are familiar with CDEvents?
-  \item Let's take a step back
-  \item Why events in Continuous Delivery?
 }
 
 \begin{grayframe}
@@ -113,19 +127,11 @@
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
-  \item Event driven workflows
-  \begin{itemize}
-    \item Scalable
-    \item Decoupled
-    \item Flexible
-    \item Policy Driven
-  \end{itemize}
-  \begin{itemize}
-    \item Multiple sources to trigger build
-    \item Multiple sources to trigger Deployment
-    \item Multiple listeners to build events
-    \item Policies
-  \end{itemize}
+  \item Various event driven workflows work across tools
+  \item SCM Examples
+  \item Tekton/Jenkins Example
+  \item Argo/Flux Example
+  \item Less glue code, more focus on DevEx
 }
 
 \begin{textondarkpic}[anthony-yin-okEUu6AMO2Y-unsplash]{%
@@ -134,66 +140,28 @@
   \frametitle{Observability}
   \begin{itemize}
     \item What's running right now?
-    \item What steps were executed?
-    \item Where did things go wrong?
+    \item Where is this code deployed?
+    \item How was this code built?
     \item How long did it take?
   \end{itemize}
 \end{textondarkpic}
+\note[itemize]{
+  \item Multiple dashboards -> Single point of entry. Backstage example. (Notifications?)
+  \item Tracking vulnerabilities
+  \item Audit and compliance
+  \item Metrics
+}
 
 \begin{grayframe}
-  \frametitle{Interoperability \& Observability}
+  \frametitle{Better DevEx}
   \begin{textblock*}{0.80\paperwidth}(0.10\paperwidth,0.15\paperheight)
     \includegraphics[width=0.80\paperwidth]{img/cdevents-4-interoperability.png}
   \end{textblock*}
 \end{grayframe}
 \note[itemize]{
-  \item Observability of CI/CD pipelines
-  \begin{itemize}
-    \item Metrics
-    \item Notification
-    \item Single View
-  \end{itemize}
-  \item Metrics: unique combinations of tools
-  \item Notifications: template to fetch data from multiple sources
-  \item Build a diagram, show the need for interoperability
-}
-
-\begin{lpicrblack}[whycdevents]{}%
-  {%
-  \begin{itemize}
-    \item Event driven workflows
-    \begin{itemize}
-      \item Scalable, Decoupled
-      \item Flexible
-      \item Policy Driven
-    \end{itemize}
-    \item Observability
-    \begin{itemize}
-      \item Metrics
-      \item Notifications
-      \item Single View
-    \end{itemize}
-    ~ \\
-    \textbf{Interoperability!} \\
-  \end{itemize}
-  }%
-  {0.60}
-  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Why CDEvents}
-\end{lpicrblack}
-\note[itemize]{
-  Event driven workflows
-  \begin{itemize}
-    \item Scalable
-    \item Decoupled
-    \item Flexible
-    \item Policy Driven
-  \end{itemize}
-  Observability of CI/CD pipelines
-  \begin{itemize}
-    \item Metrics
-    \item Notification
-    \item Single View
-  \end{itemize}
+  \item From custom solutions to Open Source
+  \item CNOE example, switch and combine tools
+  \item Draw a diagram similar to google slides one #16, but with IDP
 }
 
 \begin{lgrayframerpic}[jon-tyson-FlHdnPO6dlw-unsplash]{%
@@ -205,38 +173,78 @@
     \item First Commit Oct 2021
     \item Incubated at the CDF since 2022
   \end{itemize}
-  ~\\
-  \begin{itemize}
-    \item Release v0.1 announced at the CDSummit in Detroit
-    \begin{itemize}
-      \item Orchestration
-      \item Software Configuration Management
-      \item Continuous Integration \& Deployment
-      \item CloudEvents Binding
-      \item Golang SDK
-      \item DevOps Metrics
-    \end{itemize}
-  \end{itemize}
   }%
   {0.65}
   \frametitle{History of CDEvents}
 \end{lgrayframerpic}
 \note[itemize]{
-  \item Incubated at the CDF since 2022
-  \item CDEventsCon May 2022
-  \item Release v0.1, CDSummit in Detroit, Nov 2022
-  \item Scope:
+  \item Add whitepaper, integrations and other events
+  \item or maybe remove completely
+}
+
+\begin{grayframe}
+  \frametitle{Components}
+  \begin{textblock*}{0.80\paperwidth}(0.10\paperwidth,0.15\paperheight)
+    \includegraphics[width=0.80\paperwidth]{img/cdevents-4-interoperability.png}
+  \end{textblock*}
+\end{grayframe}
+\note[itemize]{
+  \item Components slide #14 from google slides
+}
+
+\begin{stripedframe}%
+  {%
+  Community
+  ~ \\
+  ~ \\
+  }%
+  {%
+  CDF \\
+  ~
   \begin{itemize}
-    \item Orchestration
-    \item Software Configuration Management
-    \item Continuous Integration
-    \item Continuous Deployment
+    \item SIG Interop
+    \item SIG Supply Chain
+    \item SIG Best Practices
   \end{itemize}
-  DevOps Metrics:
+  }%
+  {%
+  Tools communities \\
+  ~
   \begin{itemize}
-    \item Lead Time for Changes
-    \item Deployment Frequency
+    \item Tekton
+    \item Spinnaker
+    \item Shipwright
+    \item Jenkins
+    \item Jenkins X
+    \item Flux, Argo
   \end{itemize}
+  }%
+  {%
+  Companies \\
+  ~
+  \begin{itemize}
+    \item Ericsson
+    \item IBM / RedHat
+    \item Apple
+    \item VMWare
+    \item Fidelity
+    \item SAS
+  \end{itemize}
+  }%
+  {%
+  Get Involved!! \\
+  ~
+  \begin{itemize}
+    \item Specification
+    \item SDKs (Rust, JS, Ruby, C\#)
+    \item Tools
+    \item Proof-of-concepts
+    \item End users
+  \end{itemize}
+  }%
+\end{stripedframe}
+\note[itemize]{
+  \item Combine with Slide #15 from google slides
 }
 
 \section{What's New}
@@ -505,58 +513,6 @@
   {0.35}
   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
 \end{lpicrblack}
-
-\begin{stripedframe}%
-  {%
-  Community
-  ~ \\
-  ~ \\
-  }%
-  {%
-  CDF \\
-  ~
-  \begin{itemize}
-    \item SIG Interop
-    \item SIG Supply Chain
-    \item SIG Best Practices
-  \end{itemize}
-  }%
-  {%
-  Tools communities \\
-  ~
-  \begin{itemize}
-    \item Tekton
-    \item Spinnaker
-    \item Shipwright
-    \item Jenkins
-    \item Jenkins X
-    \item Flux, Argo
-  \end{itemize}
-  }%
-  {%
-  Companies \\
-  ~
-  \begin{itemize}
-    \item Ericsson
-    \item IBM / RedHat
-    \item Apple
-    \item VMWare
-    \item Fidelity
-    \item SAS
-  \end{itemize}
-  }%
-  {%
-  Get Involved!! \\
-  ~
-  \begin{itemize}
-    \item Specification
-    \item SDKs (Rust, JS, Ruby, C\#)
-    \item Tools
-    \item Proof-of-concepts
-    \item End users
-  \end{itemize}
-  }%
-\end{stripedframe}
 
 \section[Thank You]{Thank You!}
 
