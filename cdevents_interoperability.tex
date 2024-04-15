@@ -152,15 +152,22 @@
 }
 
 \begin{blackframe}
-  \frametitle{"The State of CI/CD" report 2024}
-  \begin{textblock*}{0.3\paperwidth}(0.35\paperwidth,0.25\paperheight)
-    \includegraphics[width=0.3\paperwidth]{img/state-ci-cd-2024-qr.png}
+  \frametitle{State of CI/CD Report 2024}
+  \begin{textblock*}{0.4\paperwidth}(0.07\paperwidth,0.18\paperheight)
+    \includegraphics[width=0.4\paperwidth]{img/State of CICD Report square shorthand.jpg}
+  \end{textblock*}
+  \begin{textblock*}{0.27\paperwidth}(0.60\paperwidth,0.28\paperheight)
+    \includegraphics[width=0.27\paperwidth]{img/state-ci-cd-2024-qr.png}
   \end{textblock*}
 \end{blackframe}
 
 \section[CDEvents]{A common specification for Continuous Delivery Events}
 
-\begin{sectionwithpicmediumcentral}[cdeventscon-gradient-16-9.jpg]{}
+\begin{sectionwithpicmediumcentral}[cdeventscon-gradient-16-9.jpg]{
+  \begin{textblock*}{0.07\paperwidth}(0.88\paperwidth,0.89\paperheight)
+    \includegraphics[width=0.07\paperwidth]{img/cdf-stacked-color.png}
+  \end{textblock*}
+}
 \end{sectionwithpicmediumcentral}
 \note[itemize]{
   \item How many of you are familiar with CDEvents?
@@ -278,7 +285,6 @@
   }{%
   Other Projects:
   \begin{itemize}
-    \item Updatecli
     \item JReleaser
     \item Guah.sh (OpenSSF)
   \end{itemize}
@@ -293,7 +299,12 @@
   ~ \\
   ~ \\
   ~ \\
-  ~ \\
+  Planning:
+  \begin{itemize}
+    \item Updatecli
+    \item Ortelius
+    \item Podtato-Head
+  \end{itemize}
   }
 \end{3squares}
 \note[itemize]{
@@ -303,60 +314,64 @@
 
 \begin{grayframe}
   \frametitle{All Together}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
+  \begin{textblock*}{0.60\paperwidth}(0.20\paperwidth,0.09\paperheight)
+    \includegraphics[width=0.60\paperwidth]{img/cdevents-poc.png}
   \end{textblock*}
 \end{grayframe}
-\note[itemize]{
-  \item Include a diagram of a POC with Jenkins, Tekton, Spinnaker
-  \item Include dotted SCM adapter
-  \item Include Events DB (ArangoDB), Harbour as registry (dotted)
-  \item Short time-slot, no time for temo
-}
 
-\begin{grayframe}
-  \frametitle{Successes and Challenges}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-Jenkins.png}
-  \end{textblock*}
-\end{grayframe}
-\note[itemize]{
-  \item Challenges:
-  \item Widespread adoption
-  \item Growing the community
-  \item Successes:
-  \item Tool adoption
-  \item End user adotion (Fidelity)
-  \item Growing community
-  \item Lessons Learnt:
+\begin{3squares}{Successes and challenges}{%
+  Challenges:
+  \begin{itemize}
+    \item Grow the Community
+    \item Widespread Adoption
+    \item Culture
+  \end{itemize}
+  ~ \\
+  ~ \\
+  ~ \\
+}{%
+Success:
+\begin{itemize}
+  \item Widespread Interest
+  \item Tools Adoption
+  \item End Users
+\end{itemize}
+}{%
+Lessons Learnt:
+\begin{itemize}
+  \item Address specific pain point
   \item Collaborations
-  \item Solve specific pain points
+\end{itemize}
+~ \\
+~ \\
+~ \\
 }
+\end{3squares}
 
 \begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
   Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
   }%
   {%
   \begin{itemize}
-    \item CDF, SIG Best Practices:\\
-    Reference Architecture
+    \item OpenTelemetry:\\
+          ~~Semantics for Pipeline\\~~Observability
   \end{itemize}
   ~ \\
   \begin{itemize}
-    \item CNCF TAG App Delivery
+    \item \href{CNOE.io}{https://cnoe.io}:\\
+          ~~Interoperability layer for IDP
   \end{itemize}
   ~ \\
   \begin{itemize}
     \item Value Stream Management\\
           Interoperability (VSMI) TC
   \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item CDF, Workshop working group
-  \end{itemize}
   }%
   {0.35}
   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
+  \begin{textblock*}{0.15\paperwidth}(0.83\paperwidth,0.25\paperheight)
+    \includegraphics[width=0.15\paperwidth]{img/cdevents-Collaborations.png}
+  \end{textblock*}
 \end{lpicrblack}
 \note[itemize]{
   \item Update with google slide #26
@@ -370,6 +385,7 @@
   {cdevents-banner-v0-4.png}
   {%
   Linked Events:
+  \vspace{0.01\textheight}
   \begin{itemize}
     \item Connect Events
     \item Fast Filtering
@@ -379,28 +395,34 @@
   }%
   {%
   Ticket Events:
+  \vspace{0.01\textheight}
   \begin{itemize}
     \item Inception to Deployment
     \item E2E Metrics
     \item Ticket Based Automation
-    \item Interoperability
+    \item Interop.
   \end{itemize}
   }%
   {%
-  Software Supply Chain Security \\
+  Custom Events:
   \vspace{0.01\textheight}
   \begin{itemize}
-    \item Artifact Signed event
-    \item Build \& Deployment Automation
+    \item Schema
+    \item Custom Types
+  \end{itemize}
+  \vspace{0.03\textheight}
+  Artifact Events:
+  \vspace{0.01\textheight}
+  \begin{itemize}
+    \item SBOM, User
+    \item New Predicates
   \end{itemize}
   }%
   {%
-  Quality of life improvements
-  \begin{itemize}
-    \item Improved readability
-    \item Examples for each event
-    \item Refreshed web site
-  \end{itemize}
+  Release Announcement:
+  \begin{textblock*}{0.17\paperwidth}(0.78\paperwidth,0.55\paperheight)
+    \includegraphics[width=0.17\paperwidth]{img/cdevents-v4-release-announcement.png}
+  \end{textblock*}
   }%
 \end{tpicstripedframe}
 \note[itemize]{
