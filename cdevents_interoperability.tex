@@ -225,7 +225,7 @@
   \begin{itemize}
     \item Promotes Collaboration \\
           through Open Source
-    \item CDEvents and \href{CNOE.io}{https://cnoe.io}
+    \item CDEvents and \href{https://cnoe.io}{CNOE.io}
   \end{itemize}
   \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
     \includegraphics[width=0.60\paperwidth]{img/cdevents-idp-cdevents.png}
@@ -301,9 +301,8 @@
   ~ \\
   Planning:
   \begin{itemize}
-    \item Updatecli
     \item Ortelius
-    \item Podtato-Head
+    \item Updatecli
   \end{itemize}
   }
 \end{3squares}
@@ -358,7 +357,7 @@ Lessons Learnt:
   \end{itemize}
   ~ \\
   \begin{itemize}
-    \item \href{CNOE.io}{https://cnoe.io}:\\
+    \item \href{https://cnoe.io}{CNOE.io}:\\
           ~~Interoperability layer for IDP
   \end{itemize}
   ~ \\
@@ -442,17 +441,8 @@ Lessons Learnt:
   ~
   }%
   {%
-  Supply Chain Security
-  \begin{itemize}
-    \item SBOM, Provenance
-  \end{itemize}
-  \begin{itemize}
-    \item Signed Events
-  \end{itemize}
-  }%
-  {%
-  New features \\
-  ~
+  New features
+  \vspace{0.02\textheight}
   \begin{itemize}
     \item Links, Workflow IDs
     \item Compositions
@@ -460,38 +450,64 @@ Lessons Learnt:
   \end{itemize}
   }%
   {%
-  Software \& Architecture\\
-  ~
+  Software \& Architecture
+  \vspace{0.02\textheight}
   \begin{itemize}
-    \item SDKs (JS, Rust)
-    \item Adapters
-    \item Proof of concept
-    \item Broker, Policy
+    \item SDKs (JS, .NET)
+    \item Webhook Adapter
+    \item Visualization
+    \item Links Service
   \end{itemize}
   }%
   {%
-  Documentation:
+  Proof of Concept
+  \vspace{0.02\textheight}
   \begin{itemize}
-    \item Reference Architecture
-    \item Example events
-    \item Example implementations
+    \item CDEvents + CNOE.io
+    \item CDEvents Visualization
+  \end{itemize}
+  }%
+  {%
+  Tools:
+  \vspace{0.02\textheight}
+  \begin{itemize}
+    \item Complete POCs
+    \item Wish:\\
+          Ortelius, Dagger, Keptn,\\
+          Screwdriver, Shipwright
   \end{itemize}
   }%
 \end{stripedframe}
-\note[itemize]{
-  \item Update Roadmap
-  \item Include Experimental CDEvents projects (Visualization, adapter, plugins, more?)
-}
 
-\begin{grayframe}
-  \frametitle{Conclusions}
-  \begin{textblock*}{0.70\paperwidth}(0.15\paperwidth,0.20\paperheight)
-    \includegraphics[width=0.70\paperwidth]{img/cdevents-1-no-events.png}
-  \end{textblock*}
-\end{grayframe}
-\note[itemize]{
-  \item Google slides #27
-}
+\begin{2columnsframe}{Conclusions}%
+  {%
+  \begin{itemize}
+    \item Lack of Standardization in the\\
+    Continuous Delivery Space
+  \end{itemize}
+  \vspace{0.22\textheight}
+  ~~~\textbf{which means}
+  \vspace{0.05\textheight}
+  \begin{itemize}
+    \item Complexity \& Costly integrations
+    \item Risk of inconsistent and\\
+          incomplete data
+    \item Developer fatigue
+  \end{itemize}
+  }{%
+  \begin{itemize}
+    \item CDEvents is a common specification for Continuous Delivery Events
+  \end{itemize}
+  \vspace{0.22\textheight}
+  ~~~\textbf{which means}
+  \vspace{0.05\textheight}
+  \begin{itemize}
+    \item Standardization
+    \item Flexibility \& Better DevEx
+    \item Better supply chain security stance through data
+  \end{itemize}
+  }
+\end{2columnsframe}
 
 \section[Thank You]{Thank You!}
 
@@ -502,22 +518,21 @@ Lessons Learnt:
   \frametitle{References}
   \begin{itemize}
     \item \href{https://cdevents.dev}{cdevents.dev, github.com/cdevents}
-    \item \href{https://github.com/cdevents/spec/blob/main/CDEvents_Whitepaper.pdf}{github.com/cdevents/spec/blob/main/CDEvents\_Whitepaper.pdf} \\~
-    \item \href{https://github.com/jenkinsci/cdevents-plugin}{github.com/jenkinsci/cdevents-plugin}
-    \item \href{https://github.com/spinnaker/governance/blob/master/rfc/cdevents-spinnaker.md}{github.com/spinnaker/governance/blob/master/rfc/cdevents-spinnaker.md}
-    \item \href{https://github.com/afrittoli/cdeventer}{github.com/afrittoli/cdeventer} \\~
-    \item \href{https://github.com/cncf/tag-app-delivery}{github.com/cncf/tag-app-delivery}
-    \item \href{https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=vsmi}{VSMI TC @ www.oasis-open.org/committees}
+    \item \href{https://cd.foundation}{CDF: cd.foundation}
+    \item \href{https://landscape.cd.foundation}{CDF Landscspe: landscape.cd.foundation}
+    \item \href{https://github.com/afrittoli/cdevents_interoperability}{Slides: github.com/afrittoli/cdevents\_interoperability}
   \end{itemize}
-  ~\\
-  ~\\
+  \vspace{0.02\textheight}
+  \begin{itemize}
+    \item \href{https://cd.foundation/blog/2024/04/16/cdevents-v04/}{Release Announcement: cd.foundation/blog/2024/04/16/cdevents-v04/}
+    \item \href{https://cd.foundation/state-of-cicd-2024/}{State of CI/CD report: cd.foundation/state-of-cicd-2024/}
+  \end{itemize}
+  \vspace{0.1\textheight}
   Andrea Frittoli | \href{mailto:andrea.frittoli@uk.ibm.com}{andrea.frittoli@uk.ibm.com} \\
   \faTwitter ~@blackchip76 | \faGithub ~afrittoli | \faLinkedin ~andreafrittoli
+  \begin{textblock*}{0.15\paperwidth}(0.70\paperwidth,0.18\paperheight)
+    \includegraphics[width=0.15\paperwidth]{img/cdcon2024-slides.png}
+  \end{textblock*}
 \end{blackframe}
-\note[itemize]{
-  \item Update references
-  \item Blog post v0.4
-  \item Slash data report
-}
 
 \end{document}
