@@ -12,7 +12,7 @@
 
 
 \title{Adopting CDEvents and Embracing Interoperability}
-\date[16 April 2024]{cdCon @ OSSNA | 16 April 2024 | \faTwitter ~@\_cdevents | \faGithub ~cdevents}
+\date[19 September 2024]{CD Mini Summit @ OSSEU | 19 September 2024 | \faTwitter ~@\_cdevents | \faGithub ~cdevents}
 \author[Andrea Frittoli]{%
   Andrea Frittoli \\
   Developer Advocate @ IBM\\
@@ -72,9 +72,9 @@
 
 \begin{sectionwithpiclargecentral}[jezael-melgoza-HYQvV8wWX18-unsplash.jpg]{Photo by \href{https://unsplash.com/@jezar}{\underline{Jezael Melgoza}}, CC0}
 \end{sectionwithpiclargecentral}
-\note[itemize]{
-  \item Use some factory picture
-}
+  \note[itemize]{
+    \item Building Software
+  }
 
 \begin{grayframe}
   \frametitle{Software Factory}
@@ -151,15 +151,15 @@
   \item Use the landscape diagram
 }
 
-\begin{blackframe}
-  \frametitle{State of CI/CD Report 2024}
-  \begin{textblock*}{0.4\paperwidth}(0.07\paperwidth,0.18\paperheight)
-    \includegraphics[width=0.4\paperwidth]{img/State of CICD Report square shorthand.jpg}
-  \end{textblock*}
-  \begin{textblock*}{0.27\paperwidth}(0.60\paperwidth,0.28\paperheight)
-    \includegraphics[width=0.27\paperwidth]{img/state-ci-cd-2024-qr.png}
-  \end{textblock*}
-\end{blackframe}
+% \begin{blackframe}
+%   \frametitle{State of CI/CD Report 2024}
+%   \begin{textblock*}{0.4\paperwidth}(0.07\paperwidth,0.18\paperheight)
+%     \includegraphics[width=0.4\paperwidth]{img/State of CICD Report square shorthand.jpg}
+%   \end{textblock*}
+%   \begin{textblock*}{0.27\paperwidth}(0.60\paperwidth,0.28\paperheight)
+%     \includegraphics[width=0.27\paperwidth]{img/state-ci-cd-2024-qr.png}
+%   \end{textblock*}
+% \end{blackframe}
 
 \section[CDEvents]{A common specification for Continuous Delivery Events}
 
@@ -179,18 +179,13 @@
     \item Less "Glue Code"
     \item More focus on DevEx \\
           and DevOps metrics
+    \item Better quality data
+    \item Drive Best Practices
   \end{itemize}
   \begin{textblock*}{0.60\paperwidth}(0.35\paperwidth,0.13\paperheight)
     \includegraphics[width=0.60\paperwidth]{img/cdevents-4-Interoperability.png}
   \end{textblock*}
 \end{grayframe}
-\note[itemize]{
-  \item Various event driven workflows work across tools
-  \item SCM Examples
-  \item Tekton/Jenkins Example
-  \item Argo/Flux Example
-  \item Less glue code, more focus on DevEx
-}
 
 \begin{textondarkpic}[anthony-yin-okEUu6AMO2Y-unsplash]{%
   Photo by \href{https://unsplash.com/@anthonyin}{\underline{Anthony Yin}}, CC0
@@ -242,9 +237,6 @@
     \includegraphics[width=0.80\paperwidth]{img/cdevents-components.png}
   \end{textblock*}
 \end{grayframe}
-\note[itemize]{
-  \item Components slide #14 from google slides
-}
 
 \begin{blackframe}
   \frametitle{Community}
@@ -263,118 +255,107 @@
     \includegraphics[width=0.45\paperwidth]{img/cdevents-community.png}
   \end{textblock*}
 \end{blackframe}
-\note[itemize]{
-  \item 2. Multiple triggers, 1 dashboard, evidence store (metrics, audit)
-  \item Draw two diagrams with IDP
-}
 
-\section{Tools Adoption}
-\begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
-\end{sectionwithpiclargecentral}
+% \section{Tools Adoption}
+% \begin{sectionwithpiclargecentral}[clay-banks-LjqARJaJotc-unsplash.jpg]{Photo by \href{https://unsplash.com/@claybanks}{\underline{Clay Banks}}, CC0}
+% \end{sectionwithpiclargecentral}
 
-\begin{3squares}{Overview}{%
-    CDF Projects:
-    \begin{itemize}
-      \item Jenkins
-      \item Spinnaker
-      \item Tekton (Experimental)
-    \end{itemize}
-    ~ \\
-    ~ \\
-    ~ \\
-  }{%
-  Other Projects:
-  \begin{itemize}
-    \item JReleaser
-    \item Guah.sh (OpenSSF)
-  \end{itemize}
-  }{%
-  CNCF Projects:
-  \begin{itemize}
-    \item Testkube
-    \item Flux
-    \item Argo CD (POC through Notifications)
-    \item Harbour (POC)
-  \end{itemize}
-  ~ \\
-  ~ \\
-  ~ \\
-  Planning:
-  \begin{itemize}
-    \item Ortelius
-    \item Updatecli
-  \end{itemize}
-  }
-\end{3squares}
-\note[itemize]{
-  \item Update the list of tools. updatecli, jreleaser
-  \item Add notes for tools
-}
+% \begin{3squares}{Overview}{%
+%     CDF Projects:
+%     \begin{itemize}
+%       \item Jenkins
+%       \item Spinnaker
+%       \item Tekton (Experimental)
+%     \end{itemize}
+%     ~ \\
+%     ~ \\
+%     ~ \\
+%   }{%
+%   Other Projects:
+%   \begin{itemize}
+%     \item JReleaser
+%     \item Guah.sh (OpenSSF)
+%   \end{itemize}
+%   }{%
+%   CNCF Projects:
+%   \begin{itemize}
+%     \item Testkube
+%     \item Flux
+%     \item Argo CD (POC through Notifications)
+%     \item Harbour (POC)
+%   \end{itemize}
+%   ~ \\
+%   ~ \\
+%   ~ \\
+%   Planning:
+%   \begin{itemize}
+%     \item Ortelius
+%     \item Updatecli
+%   \end{itemize}
+%   }
+% \end{3squares}
 
-\begin{grayframe}
-  \frametitle{All Together}
-  \begin{textblock*}{0.60\paperwidth}(0.20\paperwidth,0.09\paperheight)
-    \includegraphics[width=0.60\paperwidth]{img/cdevents-poc.png}
-  \end{textblock*}
-\end{grayframe}
+% \begin{grayframe}
+%   \frametitle{All Together}
+%   \begin{textblock*}{0.60\paperwidth}(0.20\paperwidth,0.09\paperheight)
+%     \includegraphics[width=0.60\paperwidth]{img/cdevents-poc.png}
+%   \end{textblock*}
+% \end{grayframe}
 
-\begin{3squares}{Successes and challenges}{%
-  Challenges:
-  \begin{itemize}
-    \item Grow the Community
-    \item Widespread Adoption
-    \item Culture
-  \end{itemize}
-  ~ \\
-  ~ \\
-  ~ \\
-}{%
-Success:
-\begin{itemize}
-  \item Widespread Interest
-  \item Tools Adoption
-  \item End Users
-\end{itemize}
-}{%
-Lessons Learnt:
-\begin{itemize}
-  \item Address specific pain point
-  \item Collaborations
-\end{itemize}
-~ \\
-~ \\
-~ \\
-}
-\end{3squares}
+% \begin{3squares}{Successes and challenges}{%
+%   Challenges:
+%   \begin{itemize}
+%     \item Grow the Community
+%     \item Widespread Adoption
+%     \item Culture
+%   \end{itemize}
+%   ~ \\
+%   ~ \\
+%   ~ \\
+% }{%
+% Success:
+% \begin{itemize}
+%   \item Widespread Interest
+%   \item Tools Adoption
+%   \item End Users
+% \end{itemize}
+% }{%
+% Lessons Learnt:
+% \begin{itemize}
+%   \item Address specific pain point
+%   \item Collaborations
+% \end{itemize}
+% ~ \\
+% ~ \\
+% ~ \\
+% }
+% \end{3squares}
 
-\begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
-  Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
-  }%
-  {%
-  \begin{itemize}
-    \item OpenTelemetry:\\
-          ~~Semantics for Pipeline\\~~Observability
-  \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item \href{https://cnoe.io}{CNOE.io}:\\
-          ~~Interoperability layer for IDP
-  \end{itemize}
-  ~ \\
-  \begin{itemize}
-    \item Value Stream Management\\
-          Interoperability (VSMI) TC
-  \end{itemize}
-  }%
-  {0.35}
-  \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
-  \begin{textblock*}{0.15\paperwidth}(0.83\paperwidth,0.25\paperheight)
-    \includegraphics[width=0.15\paperwidth]{img/cdevents-Collaborations.png}
-  \end{textblock*}
-\end{lpicrblack}
-\note[itemize]{
-  \item Update with google slide #26
-}
+% \begin{lpicrblack}[nick-fewings-ORSkFfgfEBI-unsplash.jpg]{%
+%   Photo by \href{https://unsplash.com/@jannerboy62}{\underline{Nick Fewings}}, CC0
+%   }%
+%   {%
+%   \begin{itemize}
+%     \item OpenTelemetry:\\
+%           ~~Semantics for Pipeline\\~~Observability
+%   \end{itemize}
+%   ~ \\
+%   \begin{itemize}
+%     \item \href{https://cnoe.io}{CNOE.io}:\\
+%           ~~Interoperability layer for IDP
+%   \end{itemize}
+%   ~ \\
+%   \begin{itemize}
+%     \item Value Stream Management\\
+%           Interoperability (VSMI) TC
+%   \end{itemize}
+%   }%
+%   {0.35}
+%   \frametitle{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collaborations}
+%   \begin{textblock*}{0.15\paperwidth}(0.83\paperwidth,0.25\paperheight)
+%     \includegraphics[width=0.15\paperwidth]{img/cdevents-Collaborations.png}
+%   \end{textblock*}
+% \end{lpicrblack}
 
 \section{What's New}
 \begin{sectionwithpiclargecentral}[josh-sorenson-MjIMc6uhwrE-unsplash.jpg]{Photo by \href{https://unsplash.com/@joshsorenson}{\underline{Josh Sorenson}}, CC0}
@@ -430,6 +411,15 @@ Lessons Learnt:
   \item 3. Content of Release, Link to release, link to blog post
 }
 
+\begin{grayframe}
+  \frametitle{What We're Working On}
+  \begin{itemize}
+    \item Webhook Adapter (list of plugins)
+    \item GitHub Application
+    \item Implementation Working Group (messaging service, software stack, specific use cases)
+  \end{itemize}
+\end{grayframe}
+
 \section{Roadmap}
 \begin{sectionwithpiclargecentral}[dimitar-donovski-yrjB4dYWUZU-unsplash.jpg]{Photo by \href{https://unsplash.com/@dmtrdon}{\underline{Dimitar Donovski}}, CC0}
 \end{sectionwithpiclargecentral}
@@ -468,14 +458,7 @@ Lessons Learnt:
   \end{itemize}
   }%
   {%
-  Tools:
-  \vspace{0.02\textheight}
-  \begin{itemize}
-    \item Complete POCs
-    \item Wish:\\
-          Ortelius, Dagger, Keptn,\\
-          Screwdriver, Shipwright
-  \end{itemize}
+  Continue to Drive Adoption
   }%
 \end{stripedframe}
 
