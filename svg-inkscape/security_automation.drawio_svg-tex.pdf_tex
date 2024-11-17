@@ -1,0 +1,105 @@
+%% Creator: Inkscape 1.3.2 (091e20e, 2023-11-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'security_automation.drawio_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{569.42422485bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.88324975)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.33738326,0.57493831){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}CI/CD Pipelines\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.23201366,0.49064263){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Plugin\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.39401941,0.49064263){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Watcher\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.64690644,0.57625543){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Webhook...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.43353301,0.33390536){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Message Bus\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.43353301,0.19297353){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Ingest\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.43353301,0.05862729){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Events Databa...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.61529556,0.14292297){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Query API\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.09371607,0.37078472){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Notifications...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.25524334,0.14292297){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Policy Engine \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.85764563,0.58547527){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dashboards\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.87081683,0.14292297){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Audit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.7035426,0.69479623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Observe Pipelines\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.49543765,0.71060166){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Maintain Pipelines\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.58105045,0.77382342){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}DevOp...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.87081683,0.28648904){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Secur...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.03444567,0.08365257){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Secur...\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.30445526,0.428738){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.45592405,0.12184905){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.56787925,0.09155529){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{3}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.30445526,0.17980233){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{4}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.08054487,0.53015623){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{5}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.90374483,0.50381383){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{6}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{security_automation.drawio_svg-tex.pdf}}%
+    \put(0.97618643,0.13502025){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{7}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
