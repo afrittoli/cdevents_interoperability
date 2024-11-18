@@ -6,6 +6,7 @@
 \RequirePackage{fontspec}
 \RequirePackage{listingsutf8}
 \RequirePackage{color}
+\RequirePackage{transparent}
 
 % Settings
 \useinnertheme{af}
@@ -309,11 +310,13 @@
   \end{frame}
 }
 
-\newenvironment<>{sectionwithpiclargecentral}[2][]
+\newenvironment<>{sectionwithpiclargecentral}[3][]
 {
   \begin{frame}[t]
     \begin{textblock*}{\paperwidth}(0cm,0cm)
+      \transparent{#3}%
       \includegraphics[width=\paperwidth]{img/#1}
+      \transparent{1}%
     \end{textblock*}
     \begin{textblock*}{\paperwidth}(0cm,0.12\paperheight)%
       \begin{beamercolorbox}[wd=\paperwidth]{section page header}%
